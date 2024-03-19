@@ -20,6 +20,7 @@ task build
 	    }
 	    destinationDirectory = file("dist")
 	    archiveFileName = "trainSchedule.zip"
+    }
     build.dependsOn zip
     zip.dependsOn npm_build
 
