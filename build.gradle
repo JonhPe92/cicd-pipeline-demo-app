@@ -18,8 +18,8 @@ task build
 		    include "routes/**"
 		    include "views/**"
 	    }
-	    destinationDir(file("dist"))
-	    baseName "trainSchedule"
+	    destinationDirectory = file("dist")
+	    archiveFileName = "trainSchedule"
     }
     build.dependsOn zip
     zip.dependsOn npm_build
