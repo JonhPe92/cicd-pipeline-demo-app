@@ -19,8 +19,7 @@ task build
 		    include "views/**"
 	    }
 	    destinationDirectory = file("dist")
-	    archiveFileName = "trainSchedule"
-    }
+	    archiveFileName = "trainSchedule.zip"
     build.dependsOn zip
     zip.dependsOn npm_build
 
