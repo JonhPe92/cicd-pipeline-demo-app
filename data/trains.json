@@ -81,6 +81,26 @@
 					"delayedDeparture": "1:17pm"
 				}
 			]
+		},
+		{
+			"name": "Helldiver Train",
+			"stops": [
+				{
+					"station": "Mavelon",
+					"status": "ON-TIME",
+					"arrival": "17:00pm",
+					"departure": "17:10pm"
+				},
+				{
+					"station": "Bugs",
+					"status": "DELAYED",
+					"arrival": "1:00pm",
+					"departure": "1:10pm",
+					"delayedArrival": "1:07pm",
+					"delayedDeparture": "1:17pm"
+				},
+			
+			]
 		}
 	]
 }
