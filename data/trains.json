@@ -83,7 +83,7 @@
 			]
 		},
 		{
-			"name": "Helldiver Train",
+			"name": "Helldiver",
 			"stops": [
 				{
 					"station": "Mavelon",
@@ -98,8 +98,7 @@
 					"departure": "1:10pm",
 					"delayedArrival": "1:07pm",
 					"delayedDeparture": "1:17pm"
-				},
-			
+				}
 			]
 		}
 	]
