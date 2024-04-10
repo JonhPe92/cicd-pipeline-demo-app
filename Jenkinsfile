@@ -50,7 +50,7 @@ pipeline {
                         } catch (err) {
                             echo: 'caught error: $err'
                         }
-                        sh 'docker run --restart always --name train-schedule-app -p 5000:5000 -d jonhpe/train-app:${env.BUILD_NUMBER}'
+                        sh 'docker run --restart always --name train-schedule-app -p 5000:5000 -d jonhpe/train-app:latest'
                     }
             }
         }
