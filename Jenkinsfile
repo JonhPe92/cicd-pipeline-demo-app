@@ -36,5 +36,23 @@ pipeline {
                 }
             }
         }
+        stage('DeployToProduction') {
+            when {
+                branch 'master'
+            }
+            steps {
+                input 'Deploy to Production?'
+                milestone(1)
+                    script {
+                        try {
+                            sh 'docker stop train-schedule'
+                            sh 'docker rm train-schedule'
+                        } catch (err) {
+                            echo: 'caught error: $err'
+                        }
+                        sh 'docker run --restart always --name train-schedule -p 5000:5000 -d jonhpe/train-schedule:${env.BUILD_NUMBER}'
+                    }
+            }
+        }
     }
 }
