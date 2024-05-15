@@ -1,6 +1,6 @@
-# cicd-pipeline-train-schedule-gradle
+# cicd-pipeline-demo-app
 
-This is a simple train schedule app written using nodejs. It is intended to be used as a sample application for a series of hands-on learning activities.
+This is a simple  nodejs. It is intended to be used as a sample an entire ci/cd pipeline with multiple devops tools.
 
 ## Running the app
 
@@ -14,4 +14,3 @@ Then, you can run the app with:
 
 Once it is running, you can access it in a browser at [http://localhost:3000](http://localhost:3000)
 
-Testing changes for weebhok build
